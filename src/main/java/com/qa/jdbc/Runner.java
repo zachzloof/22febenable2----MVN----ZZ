@@ -45,7 +45,7 @@ public class Runner {
 			
 		
 		PersonController pControl = new PersonController(pDAO);
-		
+		Menu menu = new Menu(pControl);						//RUSSIAN DOLLS
 		//CRUDS NOW 
 		
 //		pControl.create();
@@ -54,7 +54,8 @@ public class Runner {
 //		pControl.update();
 //		pControl.delete();
 //		
-		pControl.startUpApp();
+		menu.startUpApp();
+//		pControl.startUpApp();
 		
 	}
 

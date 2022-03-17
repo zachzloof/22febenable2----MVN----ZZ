@@ -83,7 +83,7 @@ public class PersonController {
 		System.out.println("Please enter an ID of the person you would like to read.");
 		int input = scanner.nextInt();
 		scanner.nextLine();
-		System.out.println(personDAO.readByID(input));
+		System.out.println(personDAO.readById(input));
 	}
 	public void update() {
 		System.out.println("Please enter the ID of the entry you would like to update");
