@@ -74,7 +74,7 @@ public class PersonDAO implements Dao<Person> {
 			ResultSet resultSet = statement.executeQuery("SELECT * FROM people");
 			List<Person> people = new ArrayList<>();
 			while (resultSet.next()) {
-				people.add(personFromResultsSet(resultSet));
+				people.add(modelFromResultsSet(resultSet));
 			}
 			return people;
 		} catch (SQLException e) {
@@ -93,7 +93,7 @@ public class PersonDAO implements Dao<Person> {
 			ResultSet resultSet = statement.executeQuery("SELECT * FROM people WHERE ID=" + id);
 
 			resultSet.next();
-			return personFromResultsSet(resultSet);
+			return modelFromResultsSet(resultSet);
 		} catch (SQLException e) {
 			LOGGER.error(e.getMessage());
 		}
