@@ -1,14 +1,14 @@
 package com.qa.jdbc.domain;
 
 public class Person {
-	
+
 	private int id;
 	private String firstName;
 	private String lastName;
 	private int age;
-	
-	
-	
+
+
+
 	//default constructor
 	public Person() {}
 	//constructor -- used for reading (selects)
@@ -18,12 +18,12 @@ public class Person {
 		this.lastName = lastName;
 		this.age = age;
 	}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	// this constructor is used for creating (insert statement)
 	public Person(String firstName, String lastName, int age) {
 		super();
@@ -66,8 +66,8 @@ public class Person {
 	public String toString() {
 		return "Person [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
 	}
-	
-	
-	
+
+
+
 
 }
